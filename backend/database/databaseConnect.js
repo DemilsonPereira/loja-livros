@@ -11,11 +11,11 @@ const databaseConnect = mysql.createConnection({
 
 databaseConnect.connect((error) => {
     if (error) {
-        throw error
+        throw error;
     }
     const database = process.env.DB_DATABASE;
-    database.toUpperCase()
-    console.log(`Conectado ao Banco de Dados: ${database.toUpperCase()}`)
+    database.toUpperCase();
+    console.log(`Conectado ao Banco de Dados: ${database.toUpperCase()}`);
 })
 
 export {

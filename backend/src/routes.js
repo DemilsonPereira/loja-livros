@@ -23,24 +23,6 @@ router.get("/livros", livroController.index);
 
 
 
-// const db = mysql.createConnection({
-//     host: "localhost",
-//     user: "root",
-//     password: "password",
-//     database: "livraria"
-// })
-
-// router.get("/livros", (request, response) => {
-//     const listarLivros = "select * from livros";
-//     db.query(listarLivros, (err, data) => {
-//         if (err) {
-//             return response.json(err)
-//         }
-//         return response.json(data)
-//     })
-
-// })
-
 export {
     router
 }

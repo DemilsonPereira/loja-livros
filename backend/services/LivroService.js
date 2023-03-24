@@ -1,16 +1,19 @@
 import { databaseConnect as db } from "../database/databaseConnect.js";
 
+
 class LivroService {
 
-    index = (request, response) => {
-        const listarLivros = "select * from livros";
-        db.query(listarLivros, (err, data) => {
-            if (err) {
-                return response.json(err)
-            }
-            return response.json(data)
-        })
+    async index() {
+        const listarLivros = await new Promise((resolve, reject) => {
+            db.query("select * from livros", (err, data) => {
+                if (err) reject(err);
+                else resolve(data);
+            })
+        });
+
+        return listarLivros;
     }
+
 }
 
 export {

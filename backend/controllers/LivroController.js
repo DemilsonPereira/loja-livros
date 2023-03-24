@@ -1,12 +1,14 @@
 import { LivroService } from "../services/LivroService.js";
 
+
 class LivroController {
 
-    livroService = new LivroService();
-
-    index = (request, response) => {
-        response.send(this.livroService.index());
+    async index(request, response) {
+        const livroService = new LivroService();
+        const livros = await livroService.index();
+        return response.json(livros);
     }
+
 }
 
 export {
