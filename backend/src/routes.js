@@ -21,7 +21,11 @@ router.get('/books', (request, response) => {
 
 router.get("/livros", livroController.index);
 
+router.post("/livros", livroController.create);
 
+router.put("/livros/:id", livroController.update);
+
+router.delete("/livros/:id", livroController.delete);
 
 export {
     router
