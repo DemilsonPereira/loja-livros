@@ -5,7 +5,7 @@ class LivroService {
 
     async index() {
         const listarLivros = await new Promise((resolve, reject) => {
-            const listarLivros = "select * from livros"
+            const listarLivros = "select * from livros";
             db.query(listarLivros, (err, data) => {
                 if (err) reject(err);
                 else resolve(data);
@@ -44,6 +44,9 @@ class LivroService {
                 preco,
             ];
             db.query(editarLivro, [...valores, livroId], (err, data) => {
+                if (data.affectedRows === 0) {
+                    resolve("Esté livro não está mais disponível.");
+                }
                 if (err) reject(err)
                 else resolve("Livro editado com sucesso!");
             });
@@ -55,8 +58,11 @@ class LivroService {
     async delete({ id }) {
         const deletarLivro = await new Promise((resolve, reject) => {
             const livroId = id;
-            const deletarLivro = "delete from livros where id = ?"
+            const deletarLivro = "delete from livros where id = ?";
             db.query(deletarLivro, [livroId], (err, data) => {
+                if (data.affectedRows === 0) {
+                    resolve("Esté livro não está mais disponível.");
+                }
                 if (err) reject(err)
                 else resolve("Livro deletado com sucesso!");
             });
