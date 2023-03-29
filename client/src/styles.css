@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.menuTitulo {
+    margin-bottom: 4rem;
+}
+
+.livros {
+    display: flex;
+    gap: 10px;
+}
+
+.livro {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    background-color: rgb(208, 246, 233);
+}
+
+.deletar {
+    border: none;
+    border-radius: 0.3rem;
+    padding: 3px 6px;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid rgb(245, 191, 191);
+    color: rgb(242, 100, 100);
+}
+
+.editar {
+    border: none;
+    border-radius: 0.3rem;
+    padding: 3px 6px;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid rgb(204, 204, 243);
+    color: rgb(139, 139, 234);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 350px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+.btnForm {
+    padding: 10px 0;
+    margin: 0 7rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.8rem;
+    border: none;
+    background-color: rgb(244, 142, 74);
+    color: white;
+}
+
+.btnCadastro {
+    margin-top: 30rem;
+    padding: 10px;
+    margin: 7rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1rem;
+    border: none;
+}
