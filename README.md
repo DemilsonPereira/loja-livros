@@ -5,7 +5,7 @@
 
 Loja de livro é uma aplicação para fins didático para compartilhar meu aprendizado com outro colegas que estejam aprendendo e sempre querendo mais.
 
-A aplicação consiste em um CRUD para o cadastro de novos livros, atualização dos dados e exclusão do mesmo, tendo um front-end feito para acesso aos endpoints.
+A aplicação consiste em um CRUD FullStack para o cadastro de livros, atualização dos dados e exclusão dos mesmos, tendo um front-end feito para acesso aos endpoints.
 
 ## Layout web
 ![Web 1](https://user-images.githubusercontent.com/33531233/228395230-6c20dc65-f4fc-4280-b0ce-38ba6f821ed8.gif)
