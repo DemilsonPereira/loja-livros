@@ -7,6 +7,8 @@ Loja de livro é uma aplicação para fins didático para compartilhar meu apren
 
 A aplicação consiste em um CRUD FullStack para o cadastro de livros, atualização dos dados e exclusão dos mesmos, tendo um front-end feito para acesso aos endpoints.
 
+Para criar a base de dados coloquei na aplicação na parte do back-end um arquivo com o nome: database.sql, onde está toda a estrutura para a criação do SCHEMA e TABLE do projeto, após a criação e se tudo estiver certo daí é só integrar a aplicação com a base de dados, atentar para o password do usuário da base de dados, após todos as verificações só fazer os testes de conexão com API.
+
 ## Layout web
 ![Web 1](https://user-images.githubusercontent.com/33531233/228395230-6c20dc65-f4fc-4280-b0ce-38ba6f821ed8.gif)
 
